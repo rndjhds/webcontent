@@ -15,7 +15,7 @@
 	document.write(num.join('-')+"<br>");	// 사당-교대-방배-강남
 	document.write(typeof(num.join('-'))+"<br>");	// string
 	
-	// reverse() : 배열 객체의 값 순서를 반대로 바꾸어주는 함수 
+	// reverse() : 배열 원소의 값들의 순서를 반대로 바꾸어주는 함수 
 	document.write(num.reverse()+"<br>");	// 강남,방배,교대,사당
 	document.write(typeof(num.reverse())+"<br>");	// object
 	document.write(num+"<br>");	// 배열  값순서는 유지하고 있다.
@@ -25,6 +25,11 @@
 	// 문자형 : 사전순 정렬
 	document.write(num.sort()+"<br>");	// 강남,교대,방배,사당
 	document.write(num+"<br>");	// 배열의 값 순서가 바뀌었다.
+	
+	// 배열 원소 값들을 내림차순 정렬( 문자 : 사전역순 정렬 )
+	document.write(num.sort().reverse()+"<br>");	// 사당,방배,교대,강남
+	document.write(num+"<br>");	// 배열의 값 순서가 바뀌었다.
+	// 사당,방배,교대,강남
 
 </script>
 

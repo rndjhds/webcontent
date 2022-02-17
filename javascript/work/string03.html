@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>String 객체</title>
+</head>
+<body>
+
+<script>
+	var name = prompt("당신의 영문 이름을 입력 하세요?","");
+	var upper = name.toUpperCase();
+	document.write(upper+"<br>");
+	
+	var num = prompt("핸드폰 번호를 입력 하세요?","");
+	
+	// substring(start index, end index) : start 인덱스 부터  end-1 인덱스 까지 추출
+	// num = "01012345678";
+	var result = num.substring(0,7) + "****";
+	document.write(result+"<br>");
+	
+	// substr(start index, 추출할 문자열의 개수) : start 인덱스 번호부터 n개의 문자 추출
+	var result2= num.substr(0,7) + "****";
+	document.write(result2+"<br>");
+	
+</script>
+
+
+</body>
+</html>
