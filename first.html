@@ -2,82 +2,37 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>html 연습</title>
+<title>Insert title here</title>
+
+<!-- 방법1. 다운로드 받은 라이브러리 사용 -->
+<!-- <script src="js/jquery-3.6.0.min.js"></script>-->
+
+<!-- 방법2. CDN 방식 -->
+<script src="http://code.jquery.com/jquery-latest.js"></script> <!-- jquery의 최신 버전을 불러오는 방법 -->
+
 </head>
 <body>
-
-<!-- html 주석 
-html 주석 : Ctrl + Shift + /
-html 주석 해제 : Ctrl + Shift + \
-
-Ctrl + Alt + 아래 방향키 : 복사
--->
+<script>
+/* 	$(document).ready(function(){
+		alert("출력 성공");
+	});*/	
+	jQuery(document).ready(function(){
+		alert("출력 성공1");
+		alert("출력 성공2");
+	});
 	
-<!-- br : 줄바꿈  -->
-처음 작성하는 html문서1 <br><br>	<!-- 여러번 쓸 수 있고 여려번 적용 가능-->
-처음 작성하는 html문서2 <br> 	
-처음 작성하는 html문서3 <br>
-
-<!-- p : 문단 나누기 -->
-처음 작성하는 html문서4 <p><p><p><p><p><p>	 <!-- 여러번 쓸수는 있지만 여려번 적용 불가능 -->
-처음 작성하는 html문서5 <p>	
-처음 작성하는 html문서6 <p>
-
-<p>문단 정렬하기1</p>	
-<p align="left">문단 정렬하기2</p>	
-<p align='center'>문단 정렬하기3</p>	
-<p align=right>문단 정렬하기4</p>	
-
-<!-- hr : 수평선 긋기 -->
-<hr>
-<hr width="50%">				<!-- 수평선의 길이(비율) -->
-<hr width="500">				<!-- 수평선 길이(절대길이) 단위 :px-->
-<hr size="10" color="red">		<!-- 수평선 두께, 색깔 -->
-<hr width="100" align="left">	<!-- 수평선 정렬(왼쪽 정렬)-->
-<hr width="100" align="center">	<!-- 수평선 정렬(가운데 정렬)-->
-<hr width="100" align="right">	<!-- 수평선 정렬(오른쪽 정렬)-->
-
-<!-- h : 제목 출력 
-1. h1 ~ h6 까지 사용 가능함(글자 크기 : h1 > h2 > h3 > h4 > h4 > h6 )
-2. 줄바꿈 기능
-3. 진하게 출력(bold)
--->
-<h1>제목 출력1</h1>		<!-- 가장 큰 크기 -->
-<h2>제목 출력2</h2>
-<h3>제목 출력3</h3>
-<h4>제목 출력4</h4>
-<h5>제목 출력5</h5>
-<h6>제목 출력6</h6>		<!-- 가장 작은 크기 -->
-
-<!-- font : 글자크기, 글자색깔, 글꼴 -->
-<!-- size : 글자크기 설정(1 ~ 7) -->
-<font size=1>글자크기 설정1</font> <br>
-<font size=2>글자크기 설정2</font> <br>
-<font size=3>글자크기 설정3</font> <br>
-<font size=4>글자크기 설정4</font> <br>
-<font size=5>글자크기 설정5</font> <br>
-<font size=6>글자크기 설정6</font> <br>
-<font size=7>글자크기 설정7</font> <br>
-
-<!-- color : 글자 색깔 설정 -->
-<font color="red">글자 색깔 설정</font> <br>
-<font color="ff0000">글자 색깔 설정</font> <br>	<!-- RGB로 컬러 설정(red) -->
-<font color="00ff00">글자 색깔 설정</font> <br>	<!-- RGB로 컬러 설정(green) -->
-<font color="0000ff">글자 색깔 설정</font> <br>	<!-- RGB로 컬러 설정(blue) -->
-<font color="orange">글자 색깔 설정</font> <br>	<!-- RGB로 컬러 설정 -->
-<font color="yellow">글자 색깔 설정</font> <br>	<!-- RGB로 컬러 설정 -->
-<font color="green">글자 색깔 설정</font> <br>	<!-- RGB로 컬러 설정 -->
-<font color="blue">글자 색깔 설정</font> <br>	<!-- RGB로 컬러 설정 -->
-<font color="navy">글자 색깔 설정</font> <br>	<!-- RGB로 컬러 설정 -->
-<font color="purple">글자 색깔 설정</font> <br>	<!-- RGB로 컬러 설정 -->
-
-<!-- face : 글꼴 -->
-<font face="고딕체">글꼴 설정1</font> <br>
-<font face="명조체">글꼴 설정1</font> <br>
-<font face="궁서체">글꼴 설정1</font> <br>
-<font face="바탕체">글꼴 설정1</font> <br>
-
-<font size="5" color="red" face="궁서체">font 태그</font>
+	$(document).ready(function(){
+		alert("출력성공3");
+	});
+	
+	// 간단한 표기법 : $(document).ready(function(){})
+	$(function(){
+		alert("출력성공4");
+	});
+	/* 실행 안됨 : jQuery(function(){
+		alert("출력성공5");
+	}); */
+</script>
 
 </body>
 </html>
